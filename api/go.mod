@@ -1,3 +1,3 @@
-module learning-gap-engine/api
+module gapwise/api
 
 go 1.23

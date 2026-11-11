@@ -19,7 +19,7 @@ The API does **not** use PostgreSQL yet. Database-backed concepts arrive in Spri
 
 We use Antigravity as an AI-assisted editor, not as a replacement for understanding or testing the code.
 
-Open the existing `learning-gap-engine` folder as the workspace; do not ask Antigravity to regenerate the project in a separate location.
+Open the existing `Gapwise` folder as the workspace; do not ask Antigravity to regenerate the project in a separate location.
 
 The repository includes `AGENTS.md`, which gives Antigravity persistent project instructions. Antigravity discovers workspace `AGENTS.md`/`GEMINI.md` rule files automatically.
 
@@ -36,7 +36,7 @@ On Windows, use PowerShell and install:
 
 ## Run Locally (Windows / PowerShell)
 
-Run these commands from the extracted `learning-gap-engine` folder unless a step says otherwise.
+Run these commands from the extracted `Gapwise` folder unless a step says otherwise.
 
 ### 1. Configure and Start PostgreSQL
 

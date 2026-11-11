@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"learning-gap-engine/api/internal/httpapi"
+	"gapwise/api/internal/httpapi"
 )
 
 func main() {
@@ -29,7 +29,7 @@ func main() {
 		IdleTimeout:       60 * time.Second,
 	}
 
-	log.Printf("Learning Gap Detection API listening on http://localhost:%s", port)
+	log.Printf("Gapwise API listening on http://localhost:%s", port)
 	if err := server.ListenAndServe(); err != nil && err != http.ErrServerClosed {
 		log.Fatalf("API server failed: %v", err)
 	}

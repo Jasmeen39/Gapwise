@@ -6,8 +6,8 @@ Antigravity is an AI-assisted development environment. In this project it can he
 
 ## Open the right folder
 
-1. Extract the project ZIP to a stable location, for example `C:\Users\<you>\source\learning-gap-engine`.
-2. Open Antigravity and open that existing `learning-gap-engine` folder as the workspace.
+1. Extract the project ZIP to a stable location, for example `C:\Users\<you>\source\Gapwise`.
+2. Open Antigravity and open that existing `Gapwise` folder as the workspace.
 3. Confirm that `AGENTS.md`, `README.md`, `compose.yaml`, `api/`, and `web/` are visible in the file explorer.
 4. Keep terminal command execution at **Request Review** (or the equivalent cautious setting) so you can inspect commands before allowing them. Do not enable unrestricted execution just to make setup faster.
 5. Read this guide and `AGENTS.md` before asking the agent to edit code.

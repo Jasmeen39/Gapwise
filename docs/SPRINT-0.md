@@ -18,7 +18,7 @@ Make the repository understandable, runnable locally, and ready for small tested
 ## Acceptance criteria
 
 - The database reports healthy in `docker compose ps`.
-- `GET http://localhost:8080/health` returns `{"status":"ok","service":"learning-gap-api"}` with HTTP 200.
+- `GET http://localhost:8080/health` returns `{"status":"ok","service":"gapwise-api"}` with HTTP 200.
 - `http://localhost:5173` loads and its backend status is `Connected`.
 - From `api/`, `go test ./...` and `go vet ./...` pass; Go files are formatted.
 - From `web/`, `npm run typecheck` and `npm run build` pass.

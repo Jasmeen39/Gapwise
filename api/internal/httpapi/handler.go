@@ -20,7 +20,7 @@ func NewHandler(allowedOrigin string) http.Handler {
 		w.WriteHeader(http.StatusOK)
 		_ = json.NewEncoder(w).Encode(healthResponse{
 			Status:  "ok",
-			Service: "learning-gap-api",
+			Service: "gapwise-api",
 		})
 	})
 

@@ -25,7 +25,7 @@ func TestHealthReturnsServiceStatus(t *testing.T) {
 	if err := json.Unmarshal(rec.Body.Bytes(), &body); err != nil {
 		t.Fatalf("decode health response: %v", err)
 	}
-	if body.Status != "ok" || body.Service != "learning-gap-api" {
+	if body.Status != "ok" || body.Service != "gapwise-api" {
 		t.Fatalf("unexpected health response: %+v", body)
 	}
 }
