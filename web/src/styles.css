@@ -1,0 +1,65 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #e8edf7;
+  background: #0b1220;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, code { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: wait; opacity: .65; }
+
+.page-shell { width: min(100% - 40px, 1040px); margin: 0 auto; padding: 34px 0 24px; }
+.topbar { display: flex; align-items: center; gap: 14px; padding-bottom: 38px; border-bottom: 1px solid #253147; }
+.brand-mark { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 14px; background: #c3f36b; color: #14200a; font-weight: 850; letter-spacing: -.06em; }
+.eyebrow { margin: 0 0 8px; color: #a7bbd8; font-size: .7rem; font-weight: 750; letter-spacing: .13em; }
+h1, h2, h3, h4, p { margin-top: 0; }
+h1 { margin: 0; font-size: clamp(1rem, 2.4vw, 1.25rem); font-weight: 650; letter-spacing: -.025em; }
+.hero { max-width: 720px; padding: 66px 0 42px; }
+.hero h2 { max-width: 650px; margin-bottom: 18px; font-size: clamp(2.5rem, 7vw, 4.6rem); line-height: .99; letter-spacing: -.065em; font-weight: 720; }
+.hero-copy { max-width: 660px; margin-bottom: 0; color: #aab7cc; font-size: 1.08rem; line-height: 1.75; }
+.connection-card { padding: 24px; border: 1px solid #2a3850; border-radius: 20px; background: #111b2c; }
+.card-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.card-heading h3, .next-section h3 { margin: 0; font-size: 1.2rem; letter-spacing: -.025em; }
+.status-dot { width: 12px; height: 12px; flex: 0 0 auto; border-radius: 50%; background: #8190a8; box-shadow: 0 0 0 5px #263246; }
+.status-dot.connected { background: #b9f36a; box-shadow: 0 0 0 5px #2a3e28; }
+.status-dot.error { background: #ff8888; box-shadow: 0 0 0 5px #482b37; }
+.status-copy { margin: 24px 0; color: #bdc8da; }
+.result-block { display: flex; flex-direction: column; gap: 6px; margin: 24px 0; padding: 14px 16px; border-radius: 12px; line-height: 1.45; }
+.result-block.success { border: 1px solid #385436; background: #182b24; color: #d8f9bd; }
+.result-block.failure { border: 1px solid #663b45; background: #301f2b; color: #ffd7d7; }
+.result-block span { overflow-wrap: anywhere; }
+.result-block .hint { margin-top: 5px; color: #d9b7c1; font-size: .88rem; }
+.card-footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 16px; border-top: 1px solid #28354a; }
+.card-footer code { color: #aab8d0; font-size: .85rem; overflow-wrap: anywhere; }
+.card-footer button { border: 1px solid #c3f36b; border-radius: 9px; padding: 10px 14px; background: #c3f36b; color: #16200b; font-weight: 750; white-space: nowrap; }
+.card-footer button:hover:not(:disabled) { background: #d4ff8c; }
+.next-section { padding: 54px 0 44px; }
+.next-section > h3 { margin-bottom: 22px; }
+.steps-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.step-card { min-height: 158px; padding: 19px; border: 1px solid #253147; border-radius: 15px; background: #0f1929; }
+.step-number { color: #c3f36b; font-size: .75rem; font-weight: 800; }
+.step-card h4 { margin: 22px 0 8px; font-size: 1rem; }
+.step-card p { margin: 0; color: #a5b3c9; font-size: .9rem; line-height: 1.6; }
+.page-footer { display: flex; justify-content: space-between; gap: 16px; padding-top: 20px; border-top: 1px solid #253147; color: #7788a3; font-size: .8rem; }
+
+@media (max-width: 640px) {
+  .page-shell { width: min(100% - 28px, 1040px); padding-top: 22px; }
+  .topbar { padding-bottom: 28px; }
+  .hero { padding: 48px 0 30px; }
+  .hero-copy { font-size: 1rem; }
+  .connection-card { padding: 18px; }
+  .card-footer { align-items: stretch; flex-direction: column; }
+  .card-footer button { width: 100%; }
+  .steps-grid { grid-template-columns: 1fr; }
+  .step-card { min-height: auto; }
+  .step-card h4 { margin-top: 14px; }
+  .page-footer { flex-direction: column; }
+}

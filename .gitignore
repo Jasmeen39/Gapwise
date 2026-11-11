@@ -1,0 +1,22 @@
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+web/dist/
+web/.vite/
+
+# Go
+api/bin/
+api/tmp/
+*.test
+coverage.out
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
